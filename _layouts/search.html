@@ -1,0 +1,62 @@
+---
+
+layout: page
+---
+
+{{ content }}
+<!-- <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+</head> -->
+
+<link rel="stylesheet" href="/assets/css/all.css">
+<script src="/assets/js/all.js"></script>
+
+<div class="common-header search">
+    <div class="search">
+      <i class="fas fa-search fa-fw"></i>
+      <input id="search-input" 
+        type="search" 
+        tabindex="1" 
+        spellcheck="false" 
+        placeholder="Search"
+      >
+    </div>
+</div>
+
+<ul id ="search-results"></ul>
+
+
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '{{ site.baseurl }}/assets/json/search-data.json',
+    searchResultTemplate: `
+        <li>
+          <div>
+            <i class="fas fa-folder fa-fw"></i>
+            <a href="{url}">{categories}</a>
+          </div>
+          <div>
+            <i class="fas fa-book fa-fw"></i>
+            <a href="{url}">{title}</a>
+          </div>
+          <div>
+            <i class="fas fa-tags fa-fw"></i>
+            <a href="{url}">{tags}</a>
+          </div>
+          <div>
+            <i class="fas fa-calendar-alt fa-fw"></i>
+            <a href="{url}">{date}</a>
+          </div>
+        </li>
+      `,
+      noResultsText: '',
+      limit: 100
+  })
+</script>
