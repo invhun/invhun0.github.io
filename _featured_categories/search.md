@@ -1,16 +1,18 @@
 ---
 # Featured tags need to have either the `list` or `grid` layout (PRO only).
-layout: list
+layout: search
 
 # The title of the tag's page.
-title: Study
+title: Search
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: study
+
+slug: search
+# permalink: /search
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  논문
-
+  search
+hide_description: true
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
 
@@ -18,3 +20,6 @@ description: >
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 sitemap: false
 ---
+
+
+<!--author-->

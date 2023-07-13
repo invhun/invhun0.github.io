@@ -59,6 +59,8 @@ menu:
     url:               /project/
   - title:             Blog
     url:               /blog/
+  - title:             Search
+    url:               /search/
 
 
 # Add links to the footer.
@@ -426,3 +428,5 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+
